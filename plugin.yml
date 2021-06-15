@@ -1,8 +1,10 @@
+---
 name: DeathEffect
-api: 3.0.0
-version: 1.0
+api:
+- 3.0.0
+version: "1.0"
 main: pedhot\deatheffect\DeathEffect
 author: PedhotDev
-
 depend:
-  - EconomyAPI
+- EconomyAPI
+...

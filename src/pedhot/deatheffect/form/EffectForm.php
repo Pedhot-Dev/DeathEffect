@@ -32,7 +32,7 @@
 
 namespace pedhot\deatheffect\form;
 
-use jojoe77777\FormAPI\SimpleForm;
+use pedhot\deatheffect\libs\jojoe77777\FormAPI\SimpleForm;
 use onebone\economyapi\EconomyAPI;
 use pedhot\deatheffect\DeathEffect;
 use pedhot\deatheffect\User;
@@ -82,6 +82,7 @@ class EffectForm
         foreach (DeathEffect::getInstance()->getAllEffects() as $name => $cost) {
             $form->addButton($check($user, $name, $cost), -1, "", $name);
         }
+        $form->sendToPlayer($user->getPlayer());
     }
 
     private function thousandsCurrencyFormat($num) {
