@@ -62,6 +62,9 @@ class EffectForm
                     $user->sendMessage("§aSuccessfull bought ".$data." effect!");
                 }
             }
+            if ($user->getSelectedEffect() == $data) {
+                $user->sendMessage("§c".$data." effect has selected!");
+            }
         });
         $form->setTitle("Select effect");
         $check = function (User $user, $name, $cost): string {
