@@ -32,7 +32,7 @@
 
 namespace pedhot\deatheffect\utils;
 
-use pedhot\deatheffect\libs\JackMD\ConfigUpdater\ConfigUpdater;
+use JackMD\ConfigUpdater\ConfigUpdater;
 use pedhot\deatheffect\DeathEffect;
 
 class Utils
