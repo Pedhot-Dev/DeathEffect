@@ -32,7 +32,7 @@
 
 namespace pedhot\deatheffect\form;
 
-use pedhot\deatheffect\libs\jojoe77777\FormAPI\SimpleForm;
+use jojoe77777\FormAPI\SimpleForm;
 use onebone\economyapi\EconomyAPI;
 use pedhot\deatheffect\DeathEffect;
 use pedhot\deatheffect\User;
