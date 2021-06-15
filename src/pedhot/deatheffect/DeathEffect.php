@@ -70,6 +70,8 @@ class DeathEffect extends PluginBase
     }
 
     public function onEnable() {
+        $this->saveDefaultConfig();
+        $this->saveResource("data.yml");
         $this->data = new Config($this->getDataFolder()."data.yml", Config::YAML);
         Server::getInstance()->getPluginManager()->registerEvents(new EventListener(), $this);
         Server::getInstance()->getCommandMap()->register($this->getName(), new SelectEffectCommand());
